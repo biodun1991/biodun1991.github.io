@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
   font-family: "Exo 2", sans-serif;
   overflow-x: hidden;
-  background: rgb(245, 245, 245);
+  /* background: rgb(245, 245, 245); */
+  background: yellow;
+  
  
 }
 
@@ -16,6 +19,7 @@ header {
   background: url(images/portimg.png) no-repeat;
   background-size: cover;
   margin-bottom: 2rem;
+  overflow-x: hidden;
 }
 
 nav .my-logo {
@@ -63,9 +67,9 @@ nav .container-fluid .button-div i {
   font-size: 1.5rem;
 }
 
-.content-container .header-content{
-  margin-top: 6%;
-  border: 1px solid white;
+.content-container{
+  margin-top: 10%;
+  /* border: 1px solid white; */
 }
 
 .content-container .header-content h1 {
@@ -75,6 +79,12 @@ nav .container-fluid .button-div i {
 
 .content-container .header-content p {
   font-weight: 600;
+}
+.content-container .header-content a{
+  display: block;
+  width: 20%;
+  margin: auto;
+  border-radius: 0;
 }
 
 .header-content .animate-text{
