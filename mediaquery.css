@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+  .ul-div {
+    position: absolute;
+    background: rgb(33, 37, 41);
+    width: 100%;
+    left: 0;
+    top: 2.2rem;
+    padding: 1rem;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+}

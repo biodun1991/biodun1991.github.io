@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  overflow-x: hidden;
+  background: rgb(245, 245, 245);
+ 
+}
+
+header {
+  height: 100dvh;
+  background: url(images/portimg.png) no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+nav .my-logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+nav .container-fluid ul li a {
+  position: relative;
+  font-size: 0.8rem;
+}
+
+nav .container-fluid ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  width: 0;
+  height: 0.2rem;
+  background: white;
+  transition: 0.5s;
+}
+
+nav .container-fluid ul li:first-child a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  width: 80%;
+  height: 0.2rem;
+  background: white;
+  transition: 0.5s;
+}
+
+nav .container-fluid ul li a:hover::after {
+  width: 80%;
+}
+
+nav .container-fluid .button-div a {
+  text-decoration: none;
+  color: white;
+}
+nav .container-fluid .button-div i {
+  font-size: 1.5rem;
+}
+
+.content-container .header-content{
+  margin-top: 6%;
+  border: 1px solid white;
+}
+
+.content-container .header-content h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.content-container .header-content p {
+  font-weight: 600;
+}
+
+.header-content .animate-text{
+  color: rgb(0, 120, 255);
+  font-size: 1.5rem;
+}
+
+/* About */
+
+.about-section h1 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.about-section h1::after {
+  content: "";
+  position: absolute;
+  background: rgb(0, 120, 255);
+  height: 0.2rem;
+  width: 11%;
+  bottom: -0.5rem;
+  left: 44.5%;
+}
+
+.about-section h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.about-right {
+  margin: 1rem auto 0 auto;
+}
+.about-right .about-image {
+  background: url(images/profile.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 12rem;
+  border-radius: 0.2rem;
+}
+
+/* Services */
+
+.services-section h1 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.services-section h1::after {
+  content: "";
+  position: absolute;
+  background: rgb(0, 120, 255);
+  height: 0.2rem;
+  width: 11%;
+  bottom: -0.5rem;
+  left: 44.5%;
+}
+.services-section .services-div {
+  height: 23rem;
+}
+.services-section .services-div div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate;
+  border: 0.5rem solid rgb(0, 120, 255);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 1rem;
+  transition: 0.5s;
+}
+
+.services-div:hover div {
+  padding: 1rem;
+  border: 0.5rem solid rgba(0, 120, 255, 0.3);
+  /* background-color: rgb(0, 120, 255); */
+}
+
+.services-div:hover div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  z-index: -1;
+  background: rgb(0, 120, 255);
+}
+
+.services-div:hover div img {
+  filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(1deg) brightness(104%)
+    contrast(102%);
+}
+
+/* skills */
+
+.skills-section h1 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.skills-section h1::after {
+  content: "";
+  position: absolute;
+  background: rgb(0, 120, 255);
+  height: 0.2rem;
+  width: 11%;
+  bottom: -0.5rem;
+  left: 44.5%;
+}
+
+/* PORTFOLIO */
+.portfolio-section h1 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.portfolio-section h1::after {
+  content: "";
+  position: absolute;
+  background: rgb(0, 120, 255);
+  height: 0.2rem;
+  width: 12%;
+  bottom: -0.5rem;
+  left: 44%;
+}
+.portfolio-section div {
+  position: relative;
+  height: 14rem;
+  isolation: isolate;
+}
+
+.portfolio-section div:nth-child(2) {
+  background: url(images/portimg.png) no-repeat;
+  background-size: cover;
+}
+
+.portfolio-section div:nth-child(3) {
+  background: url(images/portimg.png) no-repeat;
+  background-size: cover;
+}
+
+.portfolio-section div:nth-child(4) {
+  background: url(images/portimg.png) no-repeat;
+  background-size: cover;
+}
+
+.portfolio-section div:nth-child(5) {
+  background: url(images/portimg.png) no-repeat;
+  background-size: cover;
+}
+
+.portfolio-section div:nth-child(6) {
+  background: url(images/portimg.png) no-repeat;
+  background-size: cover;
+}
+
+.portfolio-section div:nth-child(7) {
+  background: url(images/portimg.png) no-repeat;
+  background-size: cover;
+}
+
+.portfolio-section div::after {
+  position: absolute;
+  content: "";
+  background: rgba(0, 120, 255, 0.3);
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.portfolio-section div:hover::after {
+  width: 100%;
+}
+
+/* contact section */
+.contact-section {
+  position: relative;
+  
+}
+.last-section h1{
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.last-section h1::after{
+  content: "";
+  position: absolute;
+  background: rgb(0, 120, 255);
+  height: 0.2rem;
+  width: 14%;
+  bottom: -0.5rem;
+  left: 43%;
+}
+
+.contact-section .contact-left {
+  position: absolute;
+  top: 1.5rem;
+  left: 6%;
+  height: 22rem;
+  color: white;
+  background: rgba(0, 120, 255, 0.9);
+}
+
+.contact-section .contact-left h3{
+  color: white;
+}
+
+.contact-left div:nth-child(2){
+   display: flex;
+   gap: .5rem;
+}
+.contact-left div:nth-child(2) i{
+  margin-top: .2rem;
+}
+.contact-left div:nth-child(3){
+  display: flex;
+  gap: .5rem;
+}
+
+.contact-section .contact-left div:last-child {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.contact-left div:last-child a{
+  text-decoration: none;
+  color: white;
+}
+
+.contact-section .contact-right {
+  background: url(images/portimg.png) no-repeat;
+  background-size: cover;
+}
+
+.contact-right h3{
+  color: white;
+}
+
+.contact-right form .input-groups {
+  position: relative;
+  margin: auto;
+  width: 80%;
+}
+
+.contact-right form .input-groups input,
+.contact-right form .input-groups textarea {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  padding: 0.8rem 0.5rem 0.5rem .5rem;
+  outline: none;
+  border: none;
+  background: rgb(245,245,245);
+  color: blue;
+  
+}
+
+.contact-right form .input-groups textarea {
+  margin-bottom: 1rem;
+  width: 80%;
+  padding: 0.8rem 0.5rem 0 0.5rem;
+  outline: none;
+  
+}
+
+.contact-right form .input-groups label {
+  position: absolute;
+  top: 0.5rem;
+  left: 11%;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.input-groups input:focus ~ label,
+.input-groups input:valid ~ label {
+  transform: translateY(-75%);
+  background: rgb(0, 120, 255);
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+  color: white;
+}
+/* .input-groups input[type="email"]:focus ~ label,
+.input-groups input[type="email"]:valid ~ label {
+  transform: translateX(-100%);
+} */
+.input-groups textarea:focus ~ label,
+.input-groups textarea:valid ~ label {
+  transform: translateY(-75%);
+  background: rgb(0, 120, 255);
+  padding: 0 0.5rem;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  left: 11%;
+}
