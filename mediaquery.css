@@ -1,4 +1,28 @@
-@media (max-width: 767px) {
+@media (max-width: 450px) {
+  .content-container .header-content a{
+    width: 40%;
+  }
+
+  header .content-container{
+    margin-top: 50%;
+  }
+
+  
+    /* contact us */
+    .contact-section{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .contact-section .contact-left{
+      position: unset;
+    }
+
+}
+
+
+
+
+@media (min-width: 451px) and (max-width:767px){
   .ul-div {
     position: absolute;
     background: rgb(33, 37, 41);
@@ -10,5 +34,24 @@
 
   .navbar-toggler:focus {
     box-shadow: none;
+  }
+
+  .content-container{
+    margin-top: 35%;
+  }
+
+  /* .content-container .header-content h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+  } */
+
+
+  /* contact us */
+  .contact-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact-section .contact-left{
+    position: unset;
   }
 }
