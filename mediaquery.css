@@ -11,16 +11,23 @@
   .navbar-toggler:focus {
     box-shadow: none;
   }
+
+    .content-container .header-content h1 {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
   nav .container-fluid ul li a::after {
    display: none;
   }
 
-  /* .content-container{
-    margin-top: 35%;
-  } */
+  .content-container{
+    margin-top: 50%;
+  }
   .content-container .header-content a{
     width: 40%;
   }
+
 
     /* contact us */
     .contact-section{
@@ -58,14 +65,14 @@
     display: none;
    }
 
-  /* .content-container{
+  .content-container{
     margin-top: 35%;
-  } */
+  }
 
-  /* .content-container .header-content h1 {
+  .content-container .header-content h1 {
     font-weight: 600;
-    font-size: 1.8rem;
-  } */
+    font-size: 2.1rem;
+  }
 
 
   /* contact us */
