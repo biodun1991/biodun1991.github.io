@@ -23,6 +23,7 @@ header nav {
   width: 100%;
   position: fixed !important;
   z-index: 1111;
+  background-color: rgba(24, 24, 24, 0.8);
 }
 
 nav .my-logo {
