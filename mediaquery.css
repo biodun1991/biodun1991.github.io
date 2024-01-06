@@ -8,46 +8,79 @@
     padding: 1rem;
   }
 
+  nav .container-fluid .button-div a {
+    font-size: 1rem;
+  }
+
   .navbar-toggler:focus {
     box-shadow: none;
   }
 
-    .content-container .header-content h1 {
+  .content-container .header-content h1 {
     font-weight: 600;
     font-size: 2rem;
   }
 
   nav .container-fluid ul li a::after {
-   display: none;
+    display: none;
   }
 
-  .content-container{
+  .content-container {
     margin-top: 50%;
   }
-  .content-container .header-content a{
+  .content-container .header-content a {
     width: 40%;
   }
 
+  /* contact us */
+  .contact-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact-section .contact-left {
+    position: unset;
+  }
 
-    /* contact us */
-    .contact-section{
-      display: flex;
-      flex-direction: column-reverse;
-    }
-    .contact-section .contact-left{
-      position: unset;
-    }
+  .contact-right form .input-groups {
+    width: 100%;
+  }
 
-    .contact-right form .input-groups {
-      width: 100%;
-    }
+  /* about*/
 
+  .about-section h1::after {
+    width: 35%;
+    left: 32%;
+  }
+
+  /* services */
+  .services-section h1::after {
+    width: 35%;
+    left: 32%;
+  }
+
+  /* skills */
+
+  .skills-section h1::after {
+    width: 35%;
+    left: 32%;
+  }
+
+  /* portfolio */
+
+  .portfolio-section h1::after {
+    width: 35%;
+    left: 32%;
+  }
+
+  /* contact */
+
+  .last-section h1::after {
+    width: 40%;
+    left: 30%;
+  }
 }
 
-
-
-
-@media (min-width: 451px) and (max-width:767px){
+@media (min-width: 451px) and (max-width: 767px) {
   .ul-div {
     position: absolute;
     background: rgb(33, 37, 41);
@@ -63,9 +96,9 @@
 
   nav .container-fluid ul li a::after {
     display: none;
-   }
+  }
 
-  .content-container{
+  .content-container {
     margin-top: 35%;
   }
 
@@ -74,13 +107,12 @@
     font-size: 2.1rem;
   }
 
-
   /* contact us */
-  .contact-section{
+  .contact-section {
     display: flex;
     flex-direction: column-reverse;
   }
-  .contact-section .contact-left{
+  .contact-section .contact-left {
     position: unset;
   }
 
@@ -89,7 +121,7 @@
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   /* .content-container{
     margin-top: 45%;
     line-height: 2rem;
