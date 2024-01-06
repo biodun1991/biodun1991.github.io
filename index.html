@@ -24,8 +24,9 @@
     <link rel="stylesheet" href="mediaquery.css" />
   </head>
   <body>
+    <div id="preloader"></div>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-expand-md bg-dark text-light">
+      <nav class="navbar navbar-expand-lg navbar-expand-md text-light">
         <div
           class="container-fluid position-relative d-flex justify-content-between"
         >
@@ -76,8 +77,9 @@
             >
               <i class="fa-solid fa-bars text-light"></i>
             </button>
-            <a href="" class="me-3"><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="me-2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="me-2"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
       </nav>
@@ -361,33 +363,39 @@
       >
         <h1 class="text-center mb-5">PORTFOLIO</h1>
         <div
-          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex align-items-center justify-content-center text-white portfolio-divs"
+          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex flex-column align-items-center justify-content-center text-white portfolio-divs"
         >
+          <h5 class="mb-1">Portfolio name</h5>
+          <p>Click <a href="">here</a> to view</p>
+        </div>
+        <div
+          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex flex-column align-items-center justify-content-center text-white portfolio-divs"
+        >
+          <h5 class="mb-1">Portfolio name</h5>
           <p class="border-white">Click <a href="">here</a> to view</p>
         </div>
         <div
-          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex align-items-center justify-content-center text-white portfolio-divs"
+          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex flex-column align-items-center justify-content-center text-white portfolio-divs"
         >
+          <h5 class="mb-1">Portfolio name</h5>
           <p class="border-white">Click <a href="">here</a> to view</p>
         </div>
         <div
-          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex align-items-center justify-content-center text-white portfolio-divs"
+          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex flex-column align-items-center justify-content-center text-white portfolio-divs"
         >
+          <h5 class="mb-1">Portfolio name</h5>
           <p class="border-white">Click <a href="">here</a> to view</p>
         </div>
         <div
-          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex align-items-center justify-content-center text-white portfolio-divs"
+          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex flex-column align-items-center justify-content-center text-white portfolio-divs"
         >
+          <h5 class="mb-1">Portfolio name</h5>
           <p class="border-white">Click <a href="">here</a> to view</p>
         </div>
         <div
-          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex align-items-center justify-content-center text-white portfolio-divs"
+          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex flex-column align-items-center justify-content-center text-white portfolio-divs"
         >
-          <p class="border-white">Click <a href="">here</a> to view</p>
-        </div>
-        <div
-          class="col-12 col-sm-5 col-lg-3 mb-3 col-md-5 d-flex align-items-center justify-content-center text-white portfolio-divs"
-        >
+          <h5 class="mb-1">Portfolio name</h5>
           <p class="border-white">Click <a href="">here</a> to view</p>
         </div>
       </div>
@@ -427,6 +435,7 @@
                 class="mx-auto d-block item"
                 type="text"
                 id="name"
+                autocomplete="off"
                 required
               />
               <label for="">Full Name</label>
@@ -438,6 +447,7 @@
                 class="mx-auto d-block item"
                 type="text"
                 id="email"
+                autocomplete="off"
                 required
               />
               <label for="">Email</label>
@@ -448,6 +458,7 @@
                 class="mx-auto d-block item"
                 type="text"
                 id="subject"
+                autocomplete="off"
                 required
               />
               <label for="">Subject</label>
@@ -460,6 +471,7 @@
                 name=""
                 id="message"
                 style="height: 8rem"
+                autocomplete="off"
                 required
               ></textarea>
               <label for="">Message</label>
@@ -476,6 +488,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="mb-3">
         <h3 class="text-center text-light fs-5">Follow Me</h3>
@@ -492,7 +505,10 @@
         Copyright © 2024 Abiodun. All Rights Reserved.
       </p>
       <p class="text-light text-center">Designed by Me</p>
-      <a href="" class="whatsapp-link"
+      <a
+        href="https://wa.me/2348149150201"
+        target="_blank"
+        class="whatsapp-link"
         ><img src="images/whatsapp1.png" alt=""
       /></a>
     </footer>
@@ -507,17 +523,12 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="smtpjs.js"></script>
+    <script src="script.js"></script>
+    <!-- <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script> -->
 
     <!-- <script src="sendemail.js"></script> -->
-    <!-- email send -->
-    <!-- <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("5Rrz1HCmtPGDZBWf7");
-      })();
-    </script> -->
   </body>
 </html>
