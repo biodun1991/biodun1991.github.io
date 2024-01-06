@@ -71,13 +71,11 @@ nav .container-fluid ul li a:hover::after {
 nav .container-fluid .button-div a {
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
 }
 
 nav .container-fluid .button-div a:hover {
   color: rgb(0, 120, 255);
-}
-nav .container-fluid .button-div i {
-  font-size: 1.5rem;
 }
 
 .content-container {
@@ -427,7 +425,7 @@ nav .container-fluid .button-div i {
 /* footer */
 
 footer {
-  background: rgb(17, 17, 17);
+  background: rgba(17, 17, 17, 0.8);
   min-height: 10rem;
   padding: 1.5rem 4rem;
 }
@@ -455,4 +453,13 @@ footer a:last-child img {
   width: 2.5rem;
 }
 
-/* test section */
+/* Preloader */
+
+#preloader {
+  background: #000 url(images/loader.gif) no-repeat center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2000;
+}
